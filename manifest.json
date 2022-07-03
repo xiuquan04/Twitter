@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Twitter",
+  "version": "1.0",
+
+  "description": "Download Twitter images and videos.",
+
+  "icons": {
+    "48": "download.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["twitterdownload.js"]
+	  
+    }
+  ]
+  
+
+}
